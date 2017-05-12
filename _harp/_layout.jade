@@ -1,7 +1,7 @@
 doctype
 html
   head
-    link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="main.css")
   body
     .header
       h1 CREST Project - NGUYEN Laboratory
@@ -9,15 +9,15 @@ html
       .nav-section
         ul#nav
           li(class="first #{ current.source == 'index' ? 'active' : '' }")
-            a(href="/") Home
+            a(href="") Home
           li(class="#{ current.source == 'research' ? 'active' : '' }")
-            a(href="/research") Research
+            a(href="research") Research
           li(class="#{ current.source == 'publications' ? 'active' : '' }")
-            a(href="/publications") Publications
+            a(href="publications") Publications
           li(class="#{ current.source == 'demos' ? 'active' : '' }")
-            a(href="/demos") Demos
+            a(href="demos") Demos
           li(class="#{ current.source == 'members' ? 'active' : '' }")
-            a(href="/members") Members
+            a(href="members") Members
 
     div(id="body-content")
       != yield
